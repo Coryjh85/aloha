@@ -1,0 +1,201 @@
+/*   {
+    border: 1px solid black; 
+    }*/
+@font-face {
+    font-family:font-awesome;
+    src: url("../fonts/fontawesome-webfont.ttf");
+    }
+
+@font-face {
+    font-family:raleway-light;
+    src: url("../fonts/Raleway-Light.ttf");
+    }
+
+@font-face {
+    font-family: playfairdisplay-regular;
+    src: url"..\fonts\PlayfairDisplay-Regular.ttf";
+    }
+
+@font-face {
+    font-family: playfairdisplay-bold;
+    src: url"..\fonts\PlayfairDisplay-Bold.ttf";
+    }
+
+@font-face {
+    font-family: playfairdisplay-italic;
+    src: url"..\fonts\PlayfairDisplay-Italic.ttf";
+    }
+
+
+.container{
+  width:1240px;
+  text-align: center;
+}
+    
+header{
+  display: inline;
+}  
+
+#header-list{
+  display:inline;
+  left:50%;
+  color:#e2574c
+ 
+}
+header ul li{
+  padding:30px;
+  color:#e2574c
+}
+
+
+section{
+    position:static;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+    url("../images/banner-girl.png"),
+    url("../images/flower-bkgd.jpg");
+    height:500px;  
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-size: auto,contain,cover;
+    
+
+}
+
+p{
+  font-family: "raleway-light";
+}
+
+li{
+  display: inline-block;
+  padding:0px;
+  margin:0px;
+  align-content: center;
+}
+
+ul{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+
+footer{
+  color:white;
+  background-color:black;
+}
+
+h1{
+  text-align:center;
+  position: relative;
+  top: 50%;
+}
+
+h2{
+  text-align:center;
+  }
+
+.nav-bar{
+  display:block;
+}
+
+#aloha-logo{
+  float:left;
+}
+
+#cart{
+  float:right;
+  }
+
+.product-list li{
+  padding:0px;
+  margin:0px;
+  width:300px;
+}
+
+
+
+.hero-foot{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+}
+
+#waves{
+  background-image: url("../images/wave-bkgd.jpg");
+  background-position: center bottom;
+  background-size: 100%;
+  height:250px;  
+
+  }  
+#mens{
+  background-image: url("../images/mens-category.jpg");
+  background-size:100%;
+  width:600px;
+  height:300px;
+  margin:0px,3px,3px,0px;
+  text-align:center;
+  position: relative;
+
+  }
+
+#trends{
+  background-image: url("../images/trends-category.jpg");
+  background-size: 100%;
+  width:300px;
+  height:300px;
+  margin:0px,3px,3px,0px;
+  text-align:center;
+  position: relative;
+
+}
+
+#glasses{
+  background-image: url("../images/glasses-category.jpg");
+  background-size: 100%;
+  width:300px;
+  height:300px;
+  margin:0px,3px,3px,0px;
+  text-align:center;
+  position: relative;
+ 
+  }
+
+#sale{
+  background-image: url("../images/sale-category.jpg");
+  background-size: 100%;
+  width:300px;
+  height:300px;
+  margin:0px,3px,0px,0px;
+  text-align:center;
+  position: relative;
+  
+  }
+
+#bags{
+  background-image: url("../images/bags-category.jpg");
+  background-size: 100%;
+  width:300px;
+  height:300px;
+  margin:0px,3px,0px,0px;
+  text-align:center;
+  position: relative;
+
+  }
+
+#womens{
+  background-image: url("../images/womens-category.jpg");
+  background-size: 100%;
+  width:600px;
+  height:300px;
+  margin:0px;
+  text-align:center;
+  position: relative;
+  
+  }
+
+#social-media{
+  display:inline;
+  color:white;
+  background-color:black;
+  float:right
+}
