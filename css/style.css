@@ -49,25 +49,33 @@ header ul li{
 
 
 section{
+    color:white;
     position:static;
     background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
     url("../images/banner-girl.png"),
     url("../images/flower-bkgd.jpg");
-    height:500px;  
+    height:400px;  
     background-position:center bottom;
     background-repeat:no-repeat;
     background-size: auto,contain,cover;
-    
+    }
 
+#new-collection{
+  font-family:"raleway-light";
 }
+
+#spring-summer{
+  font-size:36px;
+}
+
 
 p{
   font-family: "raleway-light";
 }
 
-li{
+#header-list li{
   display: inline-block;
-  padding:0px;
+  padding-bottom:10px;
   margin:0px;
   align-content: center;
 }
@@ -78,10 +86,7 @@ ul{
     list-style-type: none;
 }
 
-footer{
-  color:white;
-  background-color:black;
-}
+
 
 h1{
   text-align:center;
@@ -106,6 +111,7 @@ h2{
   }
 
 .product-list li{
+  display: inline-block;
   padding:0px;
   margin:0px;
   width:300px;
@@ -124,9 +130,15 @@ h2{
   background-image: url("../images/wave-bkgd.jpg");
   background-position: center bottom;
   background-size: 100%;
-  height:250px;  
+  height:400px;  
 
   }  
+
+  #categories li{
+      display: inline-block;
+  }
+
+
 #mens{
   background-image: url("../images/mens-category.jpg");
   background-size:100%;
@@ -193,9 +205,17 @@ h2{
   
   }
 
-#social-media{
-  display:inline;
+footer{
   color:white;
   background-color:black;
-  float:right
+  width:1240px; 
+  padding-bottom:100px;
+  text-align:left;
+  float:left;
+}
+
+#social-media{
+  color:white;
+  float:right;
+  padding-right:30px;
 }
