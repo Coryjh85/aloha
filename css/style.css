@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*   {
+    border: 1px solid green; 
+    }*/
+@font-face {
+    font-family: font-awesome;
+    src: url("../fonts/fontawesome-webfont-webfont.ttf");
+    }
+
+@font-face {
+    font-family: raleway-light;
+    src: url("../fonts/raleway-light-webfont.ttf");
+    }
+   
+@font-face {
+    font-family: raleway-medium;
+    src: url("../fonts/raleway-medium-webfont.ttf");
+    }
+
+@font-face {
+    font-family: playfairdisplay-regular;
+    src: url("../fonts/playfairdisplay-regular-webfont.ttf");
+    }
+
+@font-face {
+    font-family: playfairdisplay-bold;
+    src: url("../fonts/playfairdisplay-bold-webfont.ttf");
+    }
+
+@font-face {
+    font-family: playfairdisplay-italic;
+    src: url("../fonts/playfairdisplay-italic-webfont.ttf");
+    }
+
+
+.container{
+  max-width:1240px;
+  min-width:600px;
+  text-align: center;
+}
+    
+.nav-bar{
+  background:white;
+  display:flex;
+  z-index:100;
+  flex-flow:row wrap;
+  justify-content:space-around;
+  align-items:center;
+  max-width:1240px;
+  min-width:600px;
+  color:#e2574c;
+  font-family:"raleway-medium";
+
+} 
+.nav-bar a{
+  list-style-type:none;
+  color:inherit;
+  font-family:inherit;
+  text-decoration: none;
+} 
+
+.nav:nth-child(n) {
+position:absolute top left;
+}
+
+
+
+.nav:nth-child(6n) {
+  position:absolute top right;
+
+}
+
+
+
+.categories{
+  display:flex;
+  flex-flow:row wrap;
+  max-width:1240px;
+  min-width:600px;
+  color:white;
+  font-family:"raleway-medium";
+  } 
+
+.categories li{
+  list-style-type:none;
+  color:inherit;
+  font-family:inherit;
+  text-decoration: none;
+  display:block;
+  padding-top:125px;
+  padding-bottom:125px;
+  margin:2px;
+  }
+
+.cat a{
+  color:white;
+  text-decoration: none;
+  font-family:"raleway-medium";
+  }
+  
+.cat:nth-child(n) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
+  url("../images/mens-category.jpg");
+  background-size:cover;
+  width:calc(99%/2);
+  }
+
+.cat:nth-child(2n) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
+  url("../images/trends-category.jpg");
+  background-size:cover;
+  width:calc(99%/4);
+  }
+
+.cat:nth-child(3n) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
+  url("../images/glasses-category.jpg");
+  background-size: cover;
+  width:calc(99%/4);
+  }
+
+.cat:nth-child(4n) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
+  url("../images/sale-category.jpg");
+  background-size: cover;
+  width:calc(99%/4);
+  }
+
+.cat:nth-child(5n) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
+  url("../images/bags-category.jpg");
+  background-size: cover;
+  width:calc(99%/4);
+  }
+
+.cat:nth-child(6n) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
+  url("../images/womens-category.jpg");
+  background-size: cover;
+  width:calc(99%/2);
+  }
+
+
+
+section{
+    color:white;
+    position:static;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+    url("../images/banner-girl.png"),
+    url("../images/flower-bkgd.jpg");
+    height:400px;  
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-size: auto,contain,cover;
+    }
+
+h1{
+  text-align:center;
+  position: relative;
+  top: 50%;
+  }
+
+.new-collection{
+  font-family: "raleway-medium";
+  }
+
+.spring-summer{
+  font-size:50px;
+  }
+
+
+p{
+  font-family: "raleway-light";
+}
+
+#header-list li{
+  font-family: "raleway-medium";
+  display: inline-block;
+  padding-bottom:40px;
+  margin:0px;
+  align-content: center;
+}
+
+ul{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+
+
+h2{
+  text-align:center;
+  }
+
+.italic{
+  font-family:"playfairdisplay-italic";
+  }
+
+.bold{
+  font-family:"playfairdisplay-bold";
+  }
+
+.product-list li{
+  display: inline-block;
+  padding:0px;
+  margin:0px;
+  width:300px;
+}
+
+
+.hero-foot{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+}
+
+#waves{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/wave-bkgd.jpg");
+  background-position: center bottom;
+  color: white;
+  background-size: 100%;
+  height:300px;  
+  }  
+
+footer{
+  color:white;
+  background-color:black;
+  width:1240px; 
+  padding-bottom:100px;
+  text-align:left;
+  float:left;
+}
+
+#social-media{
+  color:white;
+  float:right;
+  padding-right:30px;
+}
