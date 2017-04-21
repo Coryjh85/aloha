@@ -54,7 +54,7 @@ table {
     border: 1px solid green; 
     }*/
 
-  @font-face {
+@font-face {
     font-family: "Playfair Display";
     src: url("../fonts/playfair-bold.eot"),
          url("../fonts/playfair-bold.woff2") format("woff2"),
@@ -132,29 +132,74 @@ table {
          url("../fonts/raleway-mediumitalic.svg#ralewaymedium_italic") format("svg");
     font-weight: bold;
     font-style: italic;
-}
+  }
 
 html{
   font-size:16px;
-}
-    
+  }
+
+
+/*--------------Selectors Used Throughout---------------*/
+
+
+h1{
+  position: relative;
+  text-align:center;
+  text-shadow: 1px 1px grey;
+  top: 50%;
+  }
+
+p{
+  font-family: "Raleway";
+  padding:3rem;
+  text-align: center;
+  }
+
+ul{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+  }
+
+h2{
+  font-size: 2rem;
+  padding:3rem;
+  text-align:center;
+  }
+
+.italic{
+  font-family:"Playfair Display";
+  font-weight: 500;
+  font-style: italic;
+  }
+
+.bold{
+  font-family:"Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  }
+
+ 
+ /*----------------navigation and logos-------------------*/
+
+
 .nav-bar{
+  align-items:center;
   background:white;
   display:flex;
-  z-index:100;
   flex-flow:row wrap;
+  font-family:"Raleway"; 
   justify-content:space-around;
-  align-items:center;
-  font-family:"Raleway";
-} 
+  z-index:100;
+  } 
 
 .nav-bar a{
-  display:flex;
   color:#e2574c;
+  display:flex;
   list-style-type:none;
   text-decoration:none;
-  
-}
+  }
+
 #logo img{
   display:flex;
   max-width: 15rem;
@@ -163,195 +208,178 @@ html{
 #cart img{
   display:flex;
   max-width:3rem;
-}
+  }
+
 .nav{
   display:flex;
-}
+  }
+
 .nav li{
   display:inline;
   padding-right:2rem;
   padding-left:2rem;
-}
+  }
 
 
+/* -----------------Hero Banner--------------- */
 
+
+section{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+    url("../images/banner-girl.png"),
+    url("../images/flower-bkgd.jpg");
+  background-position:center bottom;
+  background-repeat:no-repeat;
+  background-size: auto,contain,cover;
+  color:white;
+  height:400px;  
+  }
+
+.new-collection{
+  font-family: "Raleway";
+  font-weight:bold;
+  }
+
+.spring-summer{
+  font-size:3rem;
+  }
+
+.the6{
+  font-size:4rem;
+  }
+
+
+/*----------------Category Grid----------------*/
 
 
 .categories{
+  color:white;
   display:flex;
   flex-flow:row wrap;
-  color:white;
   font-family:"Raleway";
+  font-size:2rem;
+  font-weight:bold;
   } 
 
 .categories li{
-  list-style-type:none;
+  border:1px solid #d7d7d7;
   color:inherit;
   font-family:inherit;
-  text-decoration: none;
+  list-style-type:none;
   padding-top:125px;
   padding-bottom:125px;
-  border:1px solid #d7d7d7;
+  text-decoration: none;
+  text-align:center;
   }
 
 .cat a{
   color:white;
-  text-decoration: none;
   font-family:"Raleway";
+  text-decoration: none;
   }
   
 .cat:nth-child(n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
-  url("../images/mens-category.jpg");
+    url("../images/mens-category.jpg");
   background-size:cover;
   width:calc(95%/2);
   }
 
 .cat:nth-child(2n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
-  url("../images/trends-category.jpg");
+    url("../images/trends-category.jpg");
   background-size:cover;
   width:calc(95%/4);
   }
 
 .cat:nth-child(3n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
-  url("../images/glasses-category.jpg");
+    url("../images/glasses-category.jpg");
   background-size: cover;
   width:calc(95%/4);
   }
 
 .cat:nth-child(4n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
-  url("../images/sale-category.jpg");
+    url("../images/sale-category.jpg");
   background-size: cover;
   width:calc(95%/4);
   }
 
 .cat:nth-child(5n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
-  url("../images/bags-category.jpg");
+    url("../images/bags-category.jpg");
   background-size: cover;
   width:calc(95%/4);
   }
 
 .cat:nth-child(6n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
-  url("../images/womens-category.jpg");
+    url("../images/womens-category.jpg");
   background-size: cover;
   width:calc(95%/2);
   }
 
 
+/*--------------------Product List-------------------*/
 
-section{
-    color:white;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
-    url("../images/banner-girl.png"),
-    url("../images/flower-bkgd.jpg");
-    height:400px;  
-    background-position:center bottom;
-    background-repeat:no-repeat;
-    background-size: auto,contain,cover;
-    }
-
-h1{
-  text-align:center;
-  position: relative;
-  top: 50%;
-  }
-
-.new-collection{
-  font-family: "Raleway";
-  }
-
-.spring-summer{
-  font-size:50px;
-  }
-
-
-p{
-  font-family: "Raleway";
-  text-align: center;
-  padding:3rem;
-}
-
-
-ul{
-    margin:0px;
-    padding:0px;
-    list-style-type: none;
-}
-
-
-h2{
-  padding:3rem;
-  text-align:center;
-  font-size: 2rem;
-  }
-
-.italic{
-  font-family:"Playfair Display";
-  font-weight: normal;
-  font-style: italic;
-  }
-
-.bold{
-  font-family:"Playfair Display";
-  font-weight: bold;
-  font-style: normal;
-  }
 
 .product-list li{
   display: inline-block;
   padding:0px;
   margin:0px;
   width:24%;
-}
+  }
 
 
-
-  
+/*------------------Wave Banner with Form--------------*/
 
 
 .waves{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/wave-bkgd.jpg");
   background-position: center bottom;
-  color: white;
   background-size: 100%;
+  color: white;
   height:250px;  
   }  
   
 .hero-foot{
   position: relative;
   text-align:center;
-}
+  }
+
+
+/*-------------Footer with Social Media-----------*/
+
 
 .foot{
-  display:flex;
-  color:white;
   background-color:black;
-  padding-top:50px;
+  color:white;
+  display:flex; 
   padding-bottom:50px; 
-}
+  padding-top:50px;
+  }
+
 .foot p{
   text-align: left;
   width:50%;
-}
+  }
 
 .foot ul{
   text-align: right;
   width:50%;
   }
+
 .foot ul li{
   display:block;
-}
+  }
 
 .social-media{
   color:white;
   float:right;
   padding-right:30px;
-}
+  }
+  
 .social-media li{
-    display:inline-block;
-}
+  display:inline-block;
+  }
