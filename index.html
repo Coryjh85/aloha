@@ -1,35 +1,41 @@
 <!doctype html>
 <html>
  <head>
+  
    <meta charset="UTF-8">
+   <link href="flickity/flickity.min.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
-   <script src="https://use.fontawesome.com/d35b8ae61f.js"></script>
+   <script src="https://use.fontawesome.com/d35b8ae61f.js"></script> 
+   
    <title>Aloha Apparel</title>
 </head>
  <body>
    
-    <div class="nav-bar">
-      <div id="logo"><img src="images\aloha-logo.svg" alt="aloha logo"></div>
-      <ul class="nav">
-      <li><a href="about">About</a></li>
-      <li><a href="shop">Shop</a></li>
-      <li><a href="featured">Featured</a></li>
-      <li><a href="updates">Updates</a></li>
-      </ul>
-      <div id="cart"><a href="cart"><img src="images\cart-icon.svg" alt="cart"></a></div>
+
+<div class="nav-bar">
+  <div id="logo"><img src="images\aloha-logo.svg" alt="aloha logo">
+</div>
+  <ul class="nav">
+    <li><a href="about">About</a></li>
+    <li><a href="shop">Shop</a></li>
+    <li><a href="featured">Featured</a></li>
+    <li><a href="updates">Updates</a></li>
+  </ul>
+    <div id="cart"><a href="cart"><img src="images\cart-icon.svg" alt="cart"></a></div>
     </div>
 
 
-  <section>
-    <h1>
-      <div class="new-collection">NEW COLLECTION</div><br>
-      <div class="spring-summer">Spring/Summer 201<span class="the6">6</span></div>
-    </h1>
-  </section>
+<section>
+  <h1>
+    <div class="new-collection">NEW COLLECTION</div><br>
+    <div class="spring-summer">Spring/Summer 2016</div>
+  </h1>
+</section>
 
-    <h2>
+
+    <h2 class="about">
       <span class="italic"> Hand-Crafted </span>
-        <span class="bold">Styles</span>
+      <span class="bold">Styles</span>
     </h2>
    
 
@@ -37,7 +43,8 @@
         Browse our current selection of products or sign-up for updates now.
      </p>
 
-     <ul class="categories">
+
+     <ul class="shop">
        <li class="cat"><a href="">MEN'S</a></li>
        <li class="cat"><a href="">TRENDS</a></li>
        <li class="cat"><a href="">GLASSES</a></li>      
@@ -46,14 +53,14 @@
        <li class="cat"><a href="">WOMEN'S</a></li>
      </ul>
 
+
      <h2>
-          <span class="italic">Most-Loved </span>
-          <span class="bold">Products</span>
+       <span class="italic">Most-Loved </span>
+       <span class="bold">Products</span>
      </h2>
    
    
-   
-     <ul class="product-list">
+     <ul class="featured">
        <li><a href=""> <img src="images\checked-stretch-dress.jpg" alt="checked stretch dress" width="25%"><br>dresses<br><font color=#e2574c>Checked Stretch Dress</font>
        <br>$129.00</a></li>
        <li><a href=""><img src="images\blue-hipster-backpack.jpg" alt="blue hipster backpack" width="25%"><br>bags<br><font color=#e2574c>Blue Hipster Backpack</font>
@@ -63,35 +70,54 @@
        <li><a href=""> <img src="images\pink-dotted-dress.jpg" alt="pink dotted dress" width="25%"><br>dresses<br><font color=#e2574c>Pink Dotted Dress</font>
        <br>$129.00</a></li>
      </ul> 
-   </div>
+   
      
-     <div class="waves">
-       <h2> <span class="italic">Sign-up for </span><span class="bold">Updates</span>
-         </h2>
+
+ <div class="updates">
+    <h2> 
+      <span class="italic">Sign-up for </span>
+      <span class="bold">Updates</span>
+    </h2>
     
-     <p class="hero-foot"><font color="white">
+
+    <p>
        Stay updated on our latest product releases, be first to find out about<br>
        upcoming sales, and get free style tips from our blog. Unsubscribe at any time.
-        </font>
-     </p>
-     <form button>
+    </p>
+     
+     <button>Subscribe</button>
+   
    </div>
 
-   <footer>
-     <div class="foot">
-     <p>2016 Aloha Apparel Co.<br>
+<footer>
+  <div class="foot">
+    <p>2016 Aloha Apparel Co.<br>
        Powered by HTML and CSS.<br>
-       604-604-6040 info@alohaapparel.com</p><br>
+       604-604-6040 info@alohaapparel.com
+    </p><br>
  
   <ul class="social-media">
-     <li><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</li>
-     <li><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</li>
-     <li><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</li>
-     <li><i class="fa fa-pinterest" aria-hidden="true"></i>Pinterest</li>
-     <li><i class="fa fa-google-plus" aria-hidden="true"></i>Google+</li>
+     <li>
+       <i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</li>
+     <li>
+       <i class="fa fa-twitter" aria-hidden="true"></i>Twitter</li>
+     <li>
+       <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</li>
+     <li>
+       <i class="fa fa-pinterest" aria-hidden="true"></i>Pinterest</li>
+     <li>
+       <i class="fa fa-google-plus" aria-hidden="true"></i>Google+</li>
      </ul>
-    </div>
-   </footer>
+   </div>
+</footer>
+
+
+
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="flickity/flickity.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+
+
 
    </body>
  </html>
