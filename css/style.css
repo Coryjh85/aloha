@@ -50,9 +50,8 @@ table {
 
 
 
-/*   {
-    border: 1px solid green; 
-    }*/
+/*------------------Fonts--------------*/
+
 
 @font-face {
     font-family: "Playfair Display";
@@ -134,16 +133,17 @@ table {
     font-style: italic;
   }
 
-html{
-  font-size:16px;
-  }
 
 
 /*--------------Selectors Used Throughout---------------*/
 
+body{
+  min-width:480px;
+  font-size:14px;
+  }
 
 h1{
-  position: relative;
+  
   text-align:center;
   text-shadow: 1px 1px grey;
   top: 50%;
@@ -164,6 +164,9 @@ h2{
   padding:3rem;
   text-align:center;
   }
+  
+  a:hover{
+    color:#b64036}
 
 .italic{
   font-family:"Playfair Display";
@@ -187,36 +190,48 @@ h2{
   display:flex;
   flex-flow:row wrap;
   font-family:"Raleway"; 
+  font-weight:bold;
   justify-content:space-around;
+  
   z-index:100;
   } 
 
 .nav-bar a{
   color:#e2574c;
-  display:flex;
   list-style-type:none;
   text-decoration:none;
   }
+ 
+  .nav{
+    order:3;
+    padding:1rem;
+  }
+
+  #logo{
+    order:1;
+  }
+  #cart{
+    order:2;
+  }
 
 #logo img{
-  display:flex;
-  max-width: 15rem;
+  max-width: 15rem; 
+    align-self:flex-start;
+ 
 }
 
 #cart img{
-  display:flex;
   max-width:3rem;
+    align-self:flex-end;
+
   }
 
-.nav{
-  display:flex;
-  }
+
 
 .nav li{
   display:inline;
-  padding-right:2rem;
-  padding-left:2rem;
-  }
+  justify-content: space-around;
+    }
 
 
 /* -----------------Hero Banner--------------- */
@@ -227,21 +242,32 @@ section{
     url("../images/banner-girl.png"),
     url("../images/flower-bkgd.jpg");
   background-position:center;
-  background-repeat:no-repeat, no-repeat, repeat-x;
-  background-size: contain;
-  background-position-y: 0, 5rem, 0;
+  background-repeat:no-repeat, no-repeat, repeat;
+  background-size: contain, contain, cover;
+  background-position-y: 0, 2rem, 0;
   color:white;
-  height:30rem;  
+  display:flex;
+  height:25rem;  
   }
+h1{
+  align-content: center;
+  margin:auto auto;
+}
+
+.year{
+  display:block;
+}
 
 .new-collection{
   font-family: "Raleway";
   font-weight:bold;
+  align-content: center;
   }
 
 .spring-summer{
   font-family:"Playfair Display";
   font-size:3rem;
+  align-content: center;
   }
 
 
@@ -259,15 +285,16 @@ section{
   } 
 
 .shop li{
-  border:.2rem solid #d7d7d7;
+  border:.2rem solid white;
   color:inherit;
-  flex-flow:row wrap;
+  display: inline;
   font-family:inherit;
   list-style-type:none;
-  padding-top:125px;
-  padding-bottom:125px;
+  padding-top:100px;
+  padding-bottom:100px;
   text-decoration: none;
   text-align:center;
+  margin:0 auto;
   }
 
 .cat a{
@@ -280,43 +307,57 @@ section{
 .cat:nth-child(n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
     url("../images/mens-category.jpg");
+  background-position:right;
   background-size:cover;
-  flex-grow:2;
+  flex: 2 0 100%;
+  max-width: 100%;
   }
 
 .cat:nth-child(2n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
     url("../images/trends-category.jpg");
+    background-position:right;
   background-size:cover;
-  flex-grow:1;
-  }
+    flex: 1 0 48%;
+      max-width:48%;
+}
 
 .cat:nth-child(3n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
     url("../images/glasses-category.jpg");
+  background-position:right;
   background-size: cover;
-  flex-grow:1;
-  }
+    flex: 1 0 48%;
+      max-width:48%;
+}
 
 .cat:nth-child(4n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
     url("../images/sale-category.jpg");
+  background-position:right;
   background-size: cover;
-  flex-grow:1;
+     flex: 1 0 48%;
+    max-width:48%;
+
   }
 
 .cat:nth-child(5n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
     url("../images/bags-category.jpg");
+  background-position:right;
   background-size: cover;
-  flex-grow:1;
+    flex: 1 0 48%;
+    max-width:48%;
   }
 
 .cat:nth-child(6n) {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), 
     url("../images/womens-category.jpg");
+  background-position:right;
   background-size: cover;
-  flex-grow:2;
+  flex: 2 0 100%;
+  max-width: 100%;
+
   }
 
 
@@ -342,6 +383,8 @@ section{
   display:flex;
   flex-flow:column nowrap;
   height:250px;  
+  border-top:.5rem solid white;
+  border-bottom:.5rem solid white;
   }  
 
 .waves h2{
@@ -359,25 +402,177 @@ section{
 
 
 .foot{
-  background-color:black;
+  background-color:#242424;
   color:white;
-  display:flex; 
+  display:flex;
+  flex-flow:column nowrap; 
   padding-bottom:50px; 
   padding-top:50px;
   }
 
-.foot p{
-  text-align: left;
+.info{
+  text-align:center;
+  }
+
+.info-pad{
+  padding:1rem;
+  text-align:center;
+}
+.info-grey{
+  color:#969696;
+  text-align:center;
+  }
+.foot ul{
+  align-content: center;
+  justify-content: space-around;
   width:50%;
+  }
+
+.social-text{
+  font-size:0rem;
+}
+
+.social-media{
+  margin:0 auto;
+  display:inline;
+  }
+
+.social-media li{
+  display:inline-block;
+  padding:.5rem;
+  }
+.social-media li a{
+  color:white;
+  text-decoration:none;
+}
+
+/*-------------------Tablet Styling-----------------*/
+
+
+@media (min-width: 600px){
+   body{
+  font-size:16px;
+  }
+
+.nav-bar{
+  align-items:center;
+  background:white;
+  } 
+
+.nav-bar ul li{
+  padding:.5rem
+}
+ 
+  .nav{
+    flex-flow: row nowrap;
+    order:2;
+  }
+
+  #logo{
+    order:1;
+  }
+  #cart{
+    order:3;
+  }
+
+section{
+  background-position-y: 0, 5rem, 0;
+}
+
+.spring-summer{
+  display:inline;
+}
+
+.year{
+  display:inline;
+}
+
+.shop{
+  color:white;
+  display:flex;
+  flex-flow:row wrap;
+  font-family:"Raleway";
+  font-size:2rem;
+  font-weight:bold;
+  text-align: center
+  } 
+
+.shop li{
+  border:.2rem solid white;
+  color:inherit;
+  display:inline-block;
+  font-family:inherit;
+  list-style-type:none;
+  padding-top:125px;
+  padding-bottom:125px;
+  text-decoration: none;
+  text-align:center;
+  margin:0, auto;
+  }
+
+.cat:nth-child(n) {
+
+  flex: 2 0 100%;
+  max-width: 48%;
+  }
+
+.cat:nth-child(2n) {
+ 
+    flex: 1 0 49%;
+      max-width:24%;
+}
+
+.cat:nth-child(3n) {
+  
+    flex: 1 0 50%;
+      max-width:24%;
+}
+
+.cat:nth-child(4n) {
+ 
+     flex: 1 0 49%;
+    max-width:24%;
+
+  }
+
+.cat:nth-child(5n) {
+ 
+    flex: 1 0 50%;
+    max-width:24%;
+  }
+
+.cat:nth-child(6n) {
+  
+  flex: 2 0 100%;
+  max-width: 48%;
+
+
+}
+
+.foot{
+  background-color:#242424;
+  color:white;
+  flex-flow:row nowrap;
+  padding-bottom:50px; 
+  padding-top:50px;
+  }
+  
+  .foot p{
+    max-width:40%;
+    text-align:left;
+  }
+
+.info-grey{
+  color:#969696;
+  text-align:left;
   }
 
 .foot ul{
   text-align: right;
-  width:50%;
-  }
+  max-width: 40%;  }
 
-.foot ul li{
-  display:block;
+.social-text{
+  font-size:1rem;
   }
 
 .social-media{
@@ -387,5 +582,20 @@ section{
   }
 
 .social-media li{
-  display:inline-block;
+  display:block;
+  padding:.5rem;
   }
+
+
+  /*-------------------Wide PC Styling---------------*/
+
+@media screen and (min-width:1240px) {
+  html{
+  font-size:16px;
+  }
+
+section{
+  height:30rem;
+}
+
+}

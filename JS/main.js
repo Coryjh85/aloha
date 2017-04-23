@@ -1,0 +1,9 @@
+$(function(){
+
+//SMOOTH SCROLLING
+
+//FLICKITY SLIDER
+
+//FORM SUBMITTING THINGER
+
+});
