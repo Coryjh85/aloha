@@ -8,6 +8,8 @@ $('a').click(function(){
     return false;
 });
 
+
+
 //FLICKITY SLIDER
 
 var elem = document.querySelector('.main-carousel');
@@ -22,6 +24,8 @@ var flkty = new Flickity( elem, {
 var flkty = new Flickity( '.main-carousel', {
   // options
 });
+
+
 
 
 //FORM SUBMITTING THINGER

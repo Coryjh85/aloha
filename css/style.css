@@ -223,7 +223,7 @@ h2{
  
   .nav{
     justify-content: space-between;
-
+    max-width:40rem;
     width:90%;
     order:3;
   }
@@ -278,18 +278,18 @@ h1{
 }
 
 .new-collection{
+  align-content: center;
   font-family: "Raleway";
   font-size: 1.25rem;
   font-weight:bold;
-  align-content: center;
-  padding-bottom:1rem
-
+  padding-bottom:1rem;
+  text-transform:uppercase;
   }
 
 .spring-summer{
-  font-family:"Playfair Display";
-  font-size:3rem;
   align-content: center;
+  font-family:"Playfair Display";
+  font-size:3rem; 
   }
 
 
@@ -312,11 +312,13 @@ h1{
   display: inline;
   font-family:inherit;
   list-style-type:none;
+  margin:0 auto;
   padding-top:100px;
   padding-bottom:100px;
   text-decoration: none;
   text-align:center;
-  margin:0 auto;
+  text-transform:uppercase;
+  
   }
 
 .cat a{
@@ -387,12 +389,11 @@ h1{
 
 
 .main-carousel{
-  padding-bottom:5rem;
   margin:0 auto;
-  max-width:350px;
+  max-width:20rem;
+  min-width:20rem;
   width:90%;
   height:auto;
-  initialIndex: 2;
   }
 
 .main-carousel li{
@@ -407,7 +408,8 @@ h1{
 .grey-text{
   color:#969696;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: uppercase;
   }
 
 .product-name{
@@ -430,33 +432,49 @@ h1{
 .updates{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/wave-bkgd.jpg");
   background-position: center bottom;
-  background-size: 100%;
+  background-size: cover;
   color: white;
   display:flex;
   flex-flow:column nowrap;
   height:20rem;  
+  margin-top: 3rem;
   }  
 
-.waves p{
-  text-align:center;
-  }
 
   .signup {
     width: 386px;
     height: 46px;
     bottom: 2.5rem;
+    margin:0 auto;
   }
 
   .subscribe {
-    padding: 1rem;
-    right: 6rem;
-  } 
+	background-color:#e2574c;
+	border-radius:2rem;
+	border:4px solid white;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1rem;
+	padding:.75rem 1.5rem;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#e2574c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+    
 
   .userinput {
-    left: 16rem;
+    border-radius:2rem;
     bottom: 0.2rem;
-    height: 2.5rem;
-    width: 120px;
+    height: 2.75rem;
+    width: 10rem;
   }
 
 /*-------------Footer with Social Media-----------*/
@@ -467,8 +485,8 @@ h1{
   color:white;
   display:flex;
   flex-flow:column nowrap; 
-  padding-bottom:50px; 
-  padding-top:50px;
+  padding-bottom:3rem; 
+  padding-top:3rem;
   }
 
 .info{
@@ -579,7 +597,7 @@ section{
 .cat:nth-child(n) {
 
   flex: 2 0 100%;
-  max-width: 48%;
+  max-width: 49%;
   }
 
 .cat:nth-child(2n) {
@@ -610,26 +628,28 @@ section{
 .cat:nth-child(6n) {
   
   flex: 2 0 100%;
-  max-width: 48%;
+  max-width: 49%;
 }
 
-  .main-carousel {
-    max-width:700px;
+  
+  
+.main-carousel {
+    max-width:40rem;
+    min-width:40rem;
   }
-
-
-
 
 .foot{
   background-color:#242424;
   color:white;
   display:flex;
-  flex-flow:column wrap;
+  flex-flow:row wrap;
   padding-bottom:50px; 
   padding-top:50px;
   }
   
   .foot p{
+    display:column wrap;
+    align-items:left;
     max-width:40%;
     
   }
@@ -648,7 +668,10 @@ text-align:left;
 .foot ul{
   align-items: right;
   text-align: left;
-  max-width: 50%;  }
+  max-width: 40%; 
+  align-content: right;
+  justify-content: none;
+ }
 
 .social-text{
   font-size:1rem;
@@ -679,7 +702,8 @@ section{
 }
 
 .main-carousel{
-    max-width:1240px;
+    max-width:80rem;
+    min-width:80rem;
   }
 
 
