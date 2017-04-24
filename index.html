@@ -15,12 +15,13 @@
 <div class="nav-bar">
   <div id="logo"><img src="images\aloha-logo.svg" alt="aloha logo">
 </div>
-  <ul class="nav">
-    <li><a href="about">About</a></li>
-    <li><a href="shop">Shop</a></li>
-    <li><a href="featured">Featured</a></li>
-    <li><a href="updates">Updates</a></li>
+  <div class="nav"><ul>
+    <li><a name="about-link" href="#">About</a></li>
+    <li><a name="shop-link" href="#">Shop</a></li>
+    <li><a name="featured-link" href="#">Featured</a></li>
+    <li><a name="updates-link"href="#">Updates</a></li>
   </ul>
+  </div>
     <div id="cart"><a href="cart"><img src="images\cart-icon.svg" alt="cart"></a></div>
     </div>
 
@@ -33,7 +34,7 @@
 </section>
 
 
-    <h2 class="about">
+    <h2 id="about">
       <span class="italic"> Hand-Crafted </span>
       <span class="bold">Styles</span>
     </h2>
@@ -59,18 +60,75 @@
        <span class="bold">Products</span>
      </h2>
    
-   
-     <ul class="featured">
-       <li><a href=""> <img src="images\checked-stretch-dress.jpg" alt="checked stretch dress" width="25%"><br>dresses<br><font color=#e2574c>Checked Stretch Dress</font>
-       <br>$129.00</a></li>
-       <li><a href=""><img src="images\blue-hipster-backpack.jpg" alt="blue hipster backpack" width="25%"><br>bags<br><font color=#e2574c>Blue Hipster Backpack</font>
-       <br>$129.00</a></li>
-       <li><a href=""> <img src="images\demin-overall-shorts.jpg"alt="denim overall shorts" width="25%"><br>denim<br><font color=#e2574c>Denim overall Shorts</font>
-       <br>$129.00</a></li>
-       <li><a href=""> <img src="images\pink-dotted-dress.jpg" alt="pink dotted dress" width="25%"><br>dresses<br><font color=#e2574c>Pink Dotted Dress</font>
-       <br>$129.00</a></li>
-     </ul> 
-   
+     
+     
+     <ul class="main-carousel">
+       <li><a href=""> <img src="images\checked-stretch-dress.jpg" alt="checked stretch dress">
+         <div class="grey-text">Dresses</div>
+         <div class="product-name">Checked Stretch Dress</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>
+       
+       
+       <li><a href=""><img src="images\blue-hipster-backpack.jpg" alt="blue hipster backpack">
+         <div class="grey-text">Bags</div>
+         <div class="product-name">Blue Hipster Backpack</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>
+               
+       <li><a href=""><img src="images\demin-overall-shorts.jpg" alt="denim overall shorts">
+         <div class="grey-text">Denim</div>
+         <div class="product-name">Blue Hipster Backpack</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>
+
+       <li><a href=""><img src="images\pink-dotted-dress.jpg" alt="pink dotted dress">
+         <div class="grey-text">Dresses</div>
+         <div class="product-name">Pink Dotted Dress</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>        
+
+       <li><a href=""><img src="images\blue-silk-dress.jpg" alt="blue silk dress">
+         <div class="grey-text">Dresses</div>
+         <div class="product-name">Blue Silk Dress</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>    
+
+       <li><a href=""><img src="images\cotton-blue-shirt.jpg" alt="cotton blue shirt">
+         <div class="grey-text">Shirts</div>
+         <div class="product-name">Cotton Blue Shirt</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>   
+
+       <li><a href=""><img src="images\cotton-yellow-tshirt.jpg" alt="cotton yellow tshirt">
+         <div class="grey-text">Shirts</div>
+         <div class="product-name">Cotton Yellow Shirt</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li>  
+      
+      <li><a href=""><img src="images\stretch-knit-dress.jpg" alt="stretch knit dress">
+         <div class="grey-text">Dresses</div>
+         <div class="product-name">Cotton Yellow Shirt</div>
+         <div class="price">$129.00
+           </div>
+             </a>
+               </li> 
+                 </ul> 
+                   
      
 
  <div class="updates">
@@ -81,11 +139,14 @@
     
 
     <p>
-       Stay updated on our latest product releases, be first to find out about<br>
+       Stay updated on our latest product releases, be first to find out about
        upcoming sales, and get free style tips from our blog. Unsubscribe at any time.
     </p>
      
-     <button>Subscribe</button>
+     <form class="signup">
+        <input type="email" class="userinput" placeholder="Your Email">
+        <input type="submit" class="subscribe" value="Subscribe">
+      </form>
    
    </div>
 
@@ -102,7 +163,7 @@
   <ul class="social-media">
      <li>
       <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i>
-       <span class="social-text">Facebook</span></li>
+       <span class="social-text">Facebook</span></li></a>
      <li>
        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
        <span class="social-text">Twitter</span></li></a>
