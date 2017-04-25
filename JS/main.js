@@ -20,19 +20,13 @@ $(function(){
 
 //FLICKITY SLIDER
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
+$('.main-carousel').flickity({
   // options
+  autoPlay: 1500,
+  pauseAutoPlayOnHover: true,
   cellAlign: 'left',
   contain: true
 });
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
-
 
 
 
