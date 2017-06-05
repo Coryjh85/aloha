@@ -11,12 +11,7 @@ CSS<br>
 JavaScript, mostly involving jquery<br>
 Flickety<br>
 Font Squirrel<br>
----------Tech Used-----------<br/>
--HTML<br/>
--CSS<br/>
--JavaScript, mostly involving jquery<br/>
--Flickety<br/>
--Font Squirrel<br/>
+
 
 
 <img src="screenshot.jpg">
